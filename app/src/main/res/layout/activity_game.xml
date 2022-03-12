@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/lo_background"
+    android:background="#EEEEEE"
+    tools:context=".Game">
+
+    <TextView
+        android:id="@+id/tv_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Engineer"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_weight="2"/>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#EEEEEE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center|top"
+        android:layout_weight="1" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:orientation="horizontal">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:text="Score: "
+           android:textColor="@color/black"
+           android:textSize="22sp"
+           android:textStyle="bold"
+           android:layout_gravity="center|end"
+           android:layout_marginStart="40dp" />
+
+       <TextView
+           android:id="@+id/tv_score"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:text="0"
+           android:textColor="@color/blue"
+           android:textSize="23sp"
+           android:textStyle="bold"
+           android:layout_gravity="center|end"
+           android:layout_weight="1"/>
+
+       <TextView
+           android:id="@+id/tv_timer"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:text="0.59"
+           android:textSize="24sp"
+           android:textStyle="bold"
+           android:gravity="end"
+           android:layout_gravity="center|end"
+           android:layout_marginEnd="40dp"
+           android:layout_weight="1"/>
+
+
+   </LinearLayout>
+</LinearLayout>

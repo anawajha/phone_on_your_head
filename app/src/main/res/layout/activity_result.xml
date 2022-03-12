@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#22267B"
+    android:orientation="vertical"
+    tools:context=".Result">
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#EEEEEE"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="تهانينا" />
+
+   <androidx.coordinatorlayout.widget.CoordinatorLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:layout_gravity="center">
+
+       <ImageView
+           android:layout_gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           tools:src="@mipmap/circle" />
+
+       <TextView
+           android:id="@+id/tv_final_score"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="30sp"
+           android:textColor="#000000"
+           android:gravity="center"
+           android:layout_gravity="center"
+           android:layout_weight="1"
+           android:text="5/6" />
+
+   </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center|top"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="1"
+            android:background="#EEEEEE"
+
+            android:text="عودة للرئيسية" />
+
+        <Button
+            android:id="@+id/btn_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="1"
+            android:background="#EEEEEE"
+            android:text="العب مرة أُخرى" />
+    </LinearLayout>
+
+
+</LinearLayout>
